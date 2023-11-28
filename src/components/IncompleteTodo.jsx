@@ -19,7 +19,7 @@ export const IncompleteTodo = (props) => {
         {/* シンプルな書き方 */}
         {todos.map((todo, index) => (
           // <li key="todo"> key:一意になる項目を指定
-          <li key="todo">
+          <li key={todo}>
             <div className="list-row">
               <p className="todo-item">{todo}</p>
               <button onClick={() => onClickComplete(index)}>完了</button>

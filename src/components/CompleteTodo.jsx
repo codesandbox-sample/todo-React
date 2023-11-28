@@ -5,7 +5,7 @@ export const CompleteTodo = (props) => {
       <p className="complete-title">完了のToDo</p>
       <ul>
         {todos.map((todo, index) => (
-          <li key="todo">
+          <li key={todo}>
             <div className="list-row">
               <p className="todo-item">{todo}</p>
               <button disabled={disabled} onClick={() => onClickBack(index)}>
